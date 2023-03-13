@@ -1,19 +1,20 @@
 <div class="body">  
 
     <!-- Strona główna -->
-    <section class="sect1">
+    <section class="main-page">
       <div class="horizontal-box"></div>
       <div class="horizontal-border"></div>
       <div class="box">
         <p class="title header">Weronika Puchrowicz</p>
-        <p class="sub-title header">Portfolio.</p>
+        <div class="sub-box">
+          <p class="sub-title header">Portfolio.</p>
+        </div>
       </div>
-      <div class="sub-box"></div>
 
     </section>
   
     <!-- O mnie -->
-    <section class="sect2 hidden">
+    <section class="about">
       <p class="header">O mnie.</p>
       <img src="assets\pictures\martwa natura\15.jpg" class="image" alt="selfie">
       <div class="info-box">
@@ -29,9 +30,44 @@
         </p>
       </div>
     </section>
+
+    <section class="tiles">
+        <div class="tile-box" (click)="routeDraws()">
+          <div class="wall-left-top"></div>
+          <div class="wall-right-bottom"></div>
+          <p>RYSUNKI</p>
+        </div>
+        <div class="tile-box">
+          <div class="wall-left-top"></div>
+          <div class="wall-right-bottom"></div>
+          <p>GRAFIKA<br>2D</p>
+        </div>
+        <div class="tile-box">
+          <div class="wall-left-top"></div>
+          <div class="wall-right-bottom"></div>
+          <p>GRAFIKA<br>3D</p>
+        </div>
+    </section>
+
+    <section class="footer">
+      <div class="contact">
+        <p>Weronika Puchrowicz</p>
+        <p>ul. Kolejowa </p>
+        <p>Turza</p>
+      </div>
+      <div class="mail">
+        <p>Napisz do mnie maila</p>
+        <form class="send-mail">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Imię i nazwisko">
+          <input type="text" placeholder="Notka">
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+    </section>
   
     <!-- Struktury -->
-    <section class="sect3 hidden">
+    <!-- <section class="sect3 hidden">
       <p class="header">Struktury.</p>
       <div class="text-box">
         <p class="text">Rysunki struktur wykonane<br>
@@ -47,10 +83,10 @@
       <div class="image-box box3">
         <img class="image3" src="assets\pictures\struktury\21.jpg">
       </div>
-    </section>
+    </section> -->
 
     <!-- Rysunek -->
-    <section class="sect4 hidden">
+    <!-- <section class="sect4 hidden">
       <div class="bg1"></div>
       <div class="bg2"></div>
       <p class="header">Rysunek.</p>
@@ -68,10 +104,10 @@
       <img class="image7" src="assets\pictures\dłonie\7.png">
       <img class="image8" src="assets\pictures\dłonie\8.png">
       <img class="image9" src="assets\pictures\dłonie\9.png">
-    </section>
+    </section> -->
 
     <!-- Martwa natura -->
-    <section class="sect5 hidden">
+    <!-- <section class="sect5 hidden">
       <div class="bg1"></div>
       <div class="bg2"></div>
       <img class="image1" src="assets\pictures\martwa natura\15.jpg">
@@ -81,10 +117,10 @@
         <p class="text">Prace wykonane techniką rysunkową<br>
           przedstawiające martwą naturę.</p>
       </div>
-    </section>
+    </section> -->
 
     <!-- Miejski rytm -->
-    <section class="sect6">
+    <!-- <section class="sect6">
       <div class="bg1">
         <p class="header">Miejski rytm.</p>
         <div class="text-box">
@@ -94,10 +130,10 @@
         </div>
       </div>
       <img src="assets\pictures\miejski_rytm.jpg">
-    </section>
+    </section> -->
 
     <!-- Opole -->
-    <section class="sect7">
+    <!-- <section class="sect7">
       <div class="bg1">
         <p class="header">Opole.</p>
         <div class="text-box">
@@ -108,10 +144,10 @@
       <div class="image-box">
         <img src="assets\pictures\opole.png">
       </div>
-    </section>
+    </section> -->
 
     <!-- Grafika -->
-    <section class="sect8">
+    <!-- <section class="sect8">
       <div class="box1">
         <img src="assets\pictures\grafika\34.jpg">
       </div>
@@ -125,10 +161,10 @@
         </div>
         <p class="header">Grafika.</p>  
       </div>
-    </section>
+    </section> -->
 
     <!-- Smart planer -->
-    <section class="sect9">
+    <!-- <section class="sect9">
       <div class="box1">
         <div class="sub-box">
           <div class="box-bg"></div>
@@ -147,10 +183,10 @@
             użytkowego, planeru internetowego.</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Ulotka -->
-    <section class="sect10">
+    <!-- <section class="sect10">
       <div class="box1">
         <div class="image-box">
           <img src="assets\pictures\ulotka\1.jpeg">
@@ -170,10 +206,10 @@
         </div>
         <p class="header">Ulotka.</p>
       </div>
-    </section>
+    </section> -->
 
     <!-- Ekolampa -->
-    <section class="sect11">
+    <!-- <section class="sect11">
       <div class="box1">
         <img class="image1" src="assets\pictures\lampa\17b.jpg">
         <img class="image2" src="assets\pictures\lampa\17a.jpg">
@@ -192,10 +228,10 @@
       <div class="box3">
         <img src="assets\pictures\lampa\17d.jpg">
       </div>
-    </section>
+    </section> -->
 
     <!-- Hard Beans -->
-    <section class="sect12">
+    <!-- <section class="sect12">
       <div class="box1">
         <img src="assets\pictures\praktyki\1.png">
         <img src="assets\pictures\praktyki\2.png">
@@ -214,10 +250,10 @@
           <img class="image2" src="assets\pictures\praktyki\sample_oil.png">
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Aranżacja wnętrz -->
-    <section class="sect13">
+    <!-- <section class="sect13">
       <div class="bg1 box">
         <div class="images-box">
           <img class="image1" src="assets\pictures\aranżacja wnętrz\sypialnia2.jpg">
@@ -237,10 +273,10 @@
           <img class="image2" src="assets\pictures\aranżacja wnętrz\salon1.jpg">
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Obiekt modułowy -->
-    <section class="sect14">
+    <!-- <section class="sect14">
       <div class="box1">
         <p class="header">Obiekt modułowy.</p>
         <div class="text-box">
@@ -254,5 +290,5 @@
         <img src="assets\pictures\obiekt wypoczynkowy\obiekt modułowy 6.png">
         <img class="image2" src="assets\pictures\obiekt wypoczynkowy\obiekt modułowy 5.png">
       </div>
-    </section>
+    </section>  -->
   </div>
