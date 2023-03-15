@@ -31,6 +31,7 @@
       </div>
     </section>
 
+    <!-- Odnośniki -->
     <section class="tiles">
         <div class="tile-box" (click)="routeDraws()">
           <div class="wall-left-top"></div>
@@ -49,6 +50,59 @@
         </div>
     </section>
 
+    <section class="contact-form">
+      <div id="letter">
+        <div class="wrapper centered">
+          <div class="envelope back"></div>
+          <article class="letter">
+            <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+              <div class="side">
+                <h1>Skontaktuj się ze mną.</h1>
+                <p>
+                  <textarea name="message" placeholder="Twoja wiadomość" [(ngModel)]="message"></textarea>
+                </p>
+              </div>
+              <div class="side">
+                <p>
+                  <input 
+                    type="text" 
+                    name="name" 
+                    #nameInput="ngModel" 
+                    placeholder="Twoje imię i nazwisko" 
+                    [(ngModel)]="name"
+                    required>
+                </p>
+                <div class="is-error" *ngIf="nameInput.invalid && nameInput.touched">Twoje dane są wymagane.</div>
+                <p>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    #emailInput="ngModel"
+                    placeholder="Twój email" 
+                    [(ngModel)]="email"
+                    required
+                    email>
+                </p>
+                <div class="is-error"  *ngIf="emailInput.invalid && emailInput.touched">Twój email jest wymagany.</div>
+                <p>
+                  <button 
+                    type="submit" 
+                    id="sendLetter" 
+                    [disabled]="contactForm.invalid" 
+                    (click)="addClass()">
+                      Wyślij
+                  </button>
+                </p>
+              </div>
+            </form>
+          </article>
+          <div class="envelope front"></div>
+        </div>
+        <p class="result-message centered">Dziękuję za twoją wiadomość.</p>
+      </div>  
+    </section>
+
+    <!-- Stopka -->
     <section class="footer">
       <div class="contact">
         <p>Weronika Puchrowicz</p>

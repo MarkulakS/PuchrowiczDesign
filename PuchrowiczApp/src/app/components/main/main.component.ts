@@ -7,8 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  name: string = '';
+  email: string = '';
+  message: string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { 
+  }
 
   ngOnInit(): void {
     const observer = new IntersectionObserver((entries) => {
@@ -30,5 +34,13 @@ export class MainComponent implements OnInit {
     this.router.navigateByUrl('/drawings');
   }
 
+  addClass() {
+    document.getElementById('letter')?.classList.add('sent');    
+  }
+
+  submitForm() {
+    const message = `My name is ${this.name} and my email is ${this.email}. Message sounds: ${this.message}`;
+    alert(message);
+  }
 
 }
