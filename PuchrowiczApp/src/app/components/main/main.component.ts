@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-main',
@@ -11,7 +13,7 @@ export class MainComponent implements OnInit {
   email: string = '';
   message: string = '';
 
-  constructor(private router: Router) { 
+  constructor(private router: Router, private formBuilder: FormBuilder, private emailService: EmailService) { 
   }
 
   ngOnInit(): void {
@@ -39,8 +41,14 @@ export class MainComponent implements OnInit {
   }
 
   submitForm() {
-    const message = `My name is ${this.name} and my email is ${this.email}. Message sounds: ${this.message}`;
-    alert(message);
+    let reqObj = {
+      name: this.name,
+      email: this.email,
+      message: this.message
+    }
+    this.emailService.sendMessage(reqObj).subscribe(data => {
+      console.log(data);
+    })
   }
 
 }

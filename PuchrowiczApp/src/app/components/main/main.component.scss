@@ -171,7 +171,7 @@ section {
         z-index: 1;
     }
 }
-//kafelki
+//Kafelki
 .tiles {
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +241,7 @@ section {
         }
     }
 }
-//mail
+//Email
 .contact-form {
     display: flex;
     position: relative;
@@ -374,7 +374,8 @@ section {
         display: block;
         width: 12rem;
         height: 6rem;
-        background-color: #e9dc9d;
+        // background-color: #e9dc9d;
+        background-color: #ffe6e6;
         transform: rotate(30deg);
         transform-origin: 0 0;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -400,7 +401,8 @@ section {
             display: block;
             width: 10rem;
             height: 10rem;
-            background-color: #e9dc9d;
+            // background-color: #e9dc9d;
+            background-color: #ffe6e6;
             border-radius: 1rem;
             content: '';
             transform: scaleY(0.6) rotate(45deg)
@@ -422,7 +424,7 @@ section {
         margin: 1rem auto;
     }
 }
-
+//Email - koperta
 .sent {
     & .letter {
         animation: scaleLetter 1s forwards ease-in;
@@ -519,7 +521,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: #734b4d;
+    background-color: #cd9494;
     width: 100%;
     height: 30vh;
     color: #fff;

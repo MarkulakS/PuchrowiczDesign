@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
+    "express-generator": "^4.16.1"
+  }
+}
