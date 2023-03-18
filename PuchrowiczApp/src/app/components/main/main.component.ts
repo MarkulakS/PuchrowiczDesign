@@ -32,10 +32,6 @@ export class MainComponent implements OnInit {
     hiddenElements.forEach((el) => observer.observe(el));
   }
 
-  routeDraws() {
-    this.router.navigateByUrl('/drawings');
-  }
-
   addClass() {
     document.getElementById('letter')?.classList.add('sent');    
   }
