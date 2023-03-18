@@ -2,10 +2,13 @@
 * {
     font-family: 'Palatino Linotype', 'serfi';
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @font-face {

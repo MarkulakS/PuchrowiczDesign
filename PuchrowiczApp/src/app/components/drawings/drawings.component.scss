@@ -1,13 +1,15 @@
 .body {
     padding: 0;
     margin: 0;
+    margin-top: 50px;
     overflow-x: hidden;
 }
 section {
     display: grid;
     place-items: center;
     align-content: center;
-    height: 100vh;
+    height: calc(100vh - 70px);
+    margin-bottom: 10vh;
 }
 .header {
     font-family: 'Playfair Display', 'serif';
