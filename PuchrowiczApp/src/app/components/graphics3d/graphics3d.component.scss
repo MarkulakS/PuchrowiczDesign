@@ -1,0 +1,147 @@
+.body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+.header {
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 600;
+    font-size: 5.5rem;
+    color: #2e1a1f;
+}
+.text-box {
+    margin: auto;
+    border-left: 1px solid #000;
+    .text {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+//Aranżacja wnętrz
+.sect13 {
+    display: flex;
+    flex-direction: column;
+    .box {
+        display: flex;
+        width: 100vw;
+        height: 35vh;
+        .images-box {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            height: 100%;
+            background-color: #b88f88;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 30vh;
+        .header {
+            margin: 2vh 5vw 0 auto;
+            font-size: 4.4rem;
+        } 
+        .text-box {
+            margin-left: 5vw;
+            margin-top: -2vh;
+            .text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .bg1 {
+        .images-box {
+            margin-top: 20px;
+            margin-left: 30px;
+            .image1 {
+                margin-top: -20px;
+                margin-left: -30px;
+            }
+            .image2 {
+                margin-top: -20px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .bg3 {
+        .images-box {
+            margin: -20px 30px 0 auto;
+            .image1 {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .image2 {
+                margin-top: 20px;
+                margin-right: -20px;
+            }
+        }
+    }
+
+}
+
+//Obiekt modułowy
+.sect14 {
+    display: flex;
+    flex-direction: row;
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        height: 100vh;
+        margin: 0;
+        .header {
+            margin: 2vh 0 0 2vw;
+        }
+        .text-box {
+            margin-top: 5vh;
+            margin-left: 5vw;
+            .text {
+                font-size: 1.2rem;
+            }
+        }
+        img {
+            width: 60%;
+            height: 60%;
+            margin: auto;
+            margin-bottom: 1vh;
+        }
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        width: 40vw;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: 0;
+        background-color: #9a898c;
+        img {
+            width: 70%;
+            height: 35%;
+            margin: auto;
+        }
+        .image1 {
+            height: 25%;
+        }
+        .image2 {
+            height: 25%;
+            margin-bottom: 0;
+        }
+
+    }
+}

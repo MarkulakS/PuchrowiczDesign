@@ -8,6 +8,7 @@ import { DrawingsComponent } from './components/drawings/drawings.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Graphics2dComponent } from './components/graphics2d/graphics2d.component';
+import { Graphics3dComponent } from './components/graphics3d/graphics3d.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { Graphics2dComponent } from './components/graphics2d/graphics2d.componen
     MainComponent,
     DrawingsComponent,
     Graphics2dComponent,
+    Graphics3dComponent,
   ],
   imports: [
     ReactiveFormsModule,
