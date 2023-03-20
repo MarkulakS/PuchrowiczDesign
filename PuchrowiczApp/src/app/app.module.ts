@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Graphics2dComponent } from './components/graphics2d/graphics2d.component';
 import { Graphics3dComponent } from './components/graphics3d/graphics3d.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     Graphics2dComponent,
     Graphics3dComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     ReactiveFormsModule,

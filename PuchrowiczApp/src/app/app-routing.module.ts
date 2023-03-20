@@ -10,8 +10,7 @@ const routes: Routes = [
   {path: '', component: MainComponent },
   {path: 'drawings', component: DrawingsComponent },
   {path: 'graphics-2D', component: Graphics2dComponent },
-  {path: 'graphics-3D', component: Graphics3dComponent },
-  {path: 'nav', component: NavbarComponent }
+  {path: 'graphics-3D', component: Graphics3dComponent }
 ]
 
 @NgModule({
