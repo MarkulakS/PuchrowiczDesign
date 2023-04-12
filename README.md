@@ -56,7 +56,7 @@ The site was written under the client's guidelines.</p>
 ### *Page under construction*
 
 ## Tools & technologies used in the project:
-- Visual Studio Code (enviroment)
+- Visual Studio Code (environment)
 - Angular 12
 - TypeScript 4
 - HTML 5
