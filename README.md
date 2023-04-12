@@ -6,9 +6,9 @@
 </br>
 Na stronie głównej znajdziesz kilka sekcji, w tym "o mnie", "projekty" oraz formularz kontaktowy.
 </br></br>
-W sekcji "O mnie" przedstawiony został krótki opis doświadczenia oraz celów zawodowych klienti.
+W sekcji "O mnie" przedstawiony został krótki opis doświadczenia oraz celów zawodowych klientki.
 </br>
-Sekcja "Projekty" pozwala na obejrzenie projektów, podzielonych na kategorie. W tej sekcji znajdziesz informacje na temat najważniejszych projektów.
+Sekcja "Projekty" pozwala na obejrzenie projektów, podzielonych na kategorie. W tej sekcji znajdują się informacje na temat najważniejszych projektów.
 </br>
 Formularz kontaktowy pozwala na wysłanie maila przez użytkownika do klienta na jego skrzynkę pocztową.
 </br></br>
@@ -47,7 +47,7 @@ On the main page you will find several sections, including "about me", "projects
 </br></br>
 In the "About me" section, a brief description of experience and professional goals is presented.
 </br>
-The "Projects" section allows you to view projects divided into categories. In this section you will find information about most important projects.
+The "Projects" section allows you to view projects divided into categories. In this section, you will find information about the most important projects.
 </br>
 The contact form allows the user to send an e-mail to the customer's mailbox.
 </br></br>
