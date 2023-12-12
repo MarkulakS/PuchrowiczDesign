@@ -11,20 +11,25 @@ emailRouter.route('/')
     .post(cors.cors, (req, res, next) => {
         var transporter = nodeMailer.createTransport({
             // service: 'gmail',
-            host: 't.pl',
-            port: 465,
-            secure: true,
+            // host: 't.pl',
+            // port: 465,
+            // secure: true,
+            host: 'sandbox.smtp.mailtrap.io',
+            port: 2525,
             auth: {
-                user: 'puchrowicz_portfolio@t.pl',   //mail z którego będą wysyłane wiadomości
-                pass: 'Qwerty123!'                   //hasło do maila
-            },
-            tls: {
-                rejectUnauthorized: false
+                // user: 'puchrowicz_portfolio@t.pl',   //mail z którego będą wysyłane wiadomości
+                // pass: 'Qwerty123!'                   //hasło do maila
+                user: 'cd0af84688b77a',
+                pass: '1e105ecfe579b8'
             }
+            // tls: {
+            //     rejectUnauthorized: false
+            // }
         });
         var mailOptions = {
             from:  req.body.name + " <" + req.body.email + ">",
-            to: 'puchrowicz_portfolio@t.pl',
+            // to: 'puchrowicz_portfolio@t.pl',
+            to: req.body.email,
             subject: 'PORTFOLIO | Nowa wiadomość',
             html:   "<p>Nowa wiadomość od: <b>"+req.body.name+"</b><br>"+
                     "email: "+req.body.email+

@@ -1,69 +1,85 @@
-<div class="body">
+<div class="body" ui-view="main" autoscroll="false">
 
     <!-- Struktury -->
-    <section class="sect3 hidden">
-        <p class="header">Struktury.</p>
-        <div class="text-box">
-            <p class="text">Rysunki struktur wykonane<br>
-                ołówkiem na podstawie zdjęć<br>
-                wykonanych w dużym przybliżeniu.</p>
-        </div>
-        <div class="image-box box1">
-            <img class="image1" src="assets\pictures\struktury\19.jpg">
-        </div>
-        <div class="image-box box2">
-            <img class="image2" src="assets\pictures\struktury\20.jpg">
-        </div>
-        <div class="image-box box3">
-            <img class="image3" src="assets\pictures\struktury\21.jpg">
-        </div>
+    <section class="cont-1 hidden">
+            <div class="title">
+                <p class="header">Struktury.</p>
+                <div class="text-box">
+                    <p class="text">Rysunki struktur wykonane
+                        ołówkiem na podstawie zdjęć
+                        wykonanych<br> w dużym przybliżeniu.</p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-box">
+                    <img src="assets\pictures\struktury\19.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="assets\pictures\struktury\20.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="assets\pictures\struktury\21.jpg">
+                </div>
+            </div>
+        <span class="bottom-line"></span>
     </section>
 
     <!-- Rysunek -->
-    <section class="sect4 hidden">
-        <div class="bg1"></div>
-        <div class="bg2"></div>
-        <p class="header">Rysunek.</p>
-        <div class="text-box">
-            <p class="text">Rysunki wykonane techniką<br>
-                rysunkową w celu zapoznania się<br>
-                z anatomią ludzkiej dłoni.</p>
+    <section class="cont-2 hidden">
+        <div class="title">
+            <p class="header">Rysunek.</p>
+            <div class="text-box">
+                <p class="text">Rysunki wykonane techniką
+                    rysunkową w celu zapoznania się
+                    z anatomią ludzkiej dłoni.</p>
+            </div>
         </div>
-        <img class="image1" src="assets\pictures\dłonie\1.png">
-        <img class="image2" src="assets\pictures\dłonie\2.png">
-        <img class="image3" src="assets\pictures\dłonie\3.png">
-        <img class="image4" src="assets\pictures\dłonie\4.png">
-        <img class="image5" src="assets\pictures\dłonie\5.png">
-        <img class="image6" src="assets\pictures\dłonie\6.png">
-        <img class="image7" src="assets\pictures\dłonie\7.png">
-        <img class="image8" src="assets\pictures\dłonie\8.png">
-        <img class="image9" src="assets\pictures\dłonie\9.png">
+        <div class="grid-container">
+            <img style="transform: scale(.75)" src="assets\pictures\dłonie\1.png">
+            <img style="transform: scale(.8)" src="assets\pictures\dłonie\9.png">
+            <img style="transform: scale(.9)" src="assets\pictures\dłonie\3.png">
+            <img style="transform: scale(1.1)" src="assets\pictures\dłonie\4.png">
+            <img style="transform: scale(1.1)" src="assets\pictures\dłonie\7.png">
+            <img style="transform: scale(.9)" src="assets\pictures\dłonie\5.png">
+            <img style="transform: scale(1.2)" src="assets\pictures\dłonie\6.png">
+            <img style="transform: scale(1.1)" src="assets\pictures\dłonie\8.png">
+            <img style="transform: scale(1.1)" src="assets\pictures\dłonie\2.png">
+        </div>
+        <span class="bottom-line"></span>
     </section>
 
     <!-- Martwa natura -->
-    <section class="sect5 hidden">
-        <div class="bg1"></div>
-        <div class="bg2"></div>
-        <img class="image1" src="assets\pictures\martwa natura\15.jpg">
-        <img class="image2" src="assets\pictures\martwa natura\16.jpg">
-        <p class="header">Martwa natura.</p>
-        <div class="text-box">
-            <p class="text">Prace wykonane techniką rysunkową<br>
-                przedstawiające martwą naturę.</p>
+    <section class="cont-3 hidden">
+        <div class="title">
+            <p class="header">Martwa natura.</p>
+            <div class="text-box">
+                <p class="text">Prace wykonane techniką rysunkową
+                    przedstawiające martwą naturę.</p>
+            </div>
         </div>
+        <div class="images">
+            <div class="img-box box-1">
+                <img class="image-1" src="assets\pictures\martwa natura\15.jpg">
+            </div>
+            <div class="img-box box-2">
+                <img class="image-2" src="assets\pictures\martwa natura\16.jpg">
+            </div>
+        </div>
+        <span class="bottom-line"></span>
     </section>
 
     <!-- Miejski rytm -->
-    <section class="sect6">
-      <div class="bg1">
+    <section class="cont-4">
+      <div class="title">
         <p class="header">Miejski rytm.</p>
         <div class="text-box">
-          <p class="text">Praca wykonana techniką ołówkową. Rysunek<br>
-            przedstawia Cour des Voraces, budynek z<br>
+          <p class="text">Praca wykonana techniką ołówkową. Rysunek
+            przedstawia Cour des Voraces, budynek z
             dziedzińcem w dzielnicy Pentes, w 1. dzielnicy Lyonu.</p>
         </div>
       </div>
-      <img src="assets\pictures\miejski_rytm.jpg">
-    </section>
-
+      <div class="img-box">
+        <img src="assets\pictures\miejski_rytm.jpg">
+      </div>
+    </section> 
 </div>

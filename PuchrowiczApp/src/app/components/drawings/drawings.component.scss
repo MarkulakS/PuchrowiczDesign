@@ -8,228 +8,261 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    height: 100vh;
-    margin-bottom: 10vh;
+    width: 95%;
+    height: 95%;
+    margin-bottom: 100px;
+}
+.title {
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 .header {
     font-family: 'Playfair Display', 'serif';
     font-weight: 600;
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: #2e1a1f;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 .text-box {
+    justify-content: center;
     margin: auto;
-    border-left: 1px solid #000;
+    width: 50%;
+    // margin-left: 40%;
+    border-top: 1px solid #000;
     .text {
         width: auto;
         height: auto;
-        margin-left: 20px;
-        font-size: 1.5rem;
+        // margin-left: 20px;
+        font-size: 1.3rem;
+        text-align: center;
     }
+}
+.bottom-line {
+    width: 70%;
+    height: 2px;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 1px solid #cd9494;
 }
 
 //Struktury
-.sect3 {
-    position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    .header {
-        position: absolute;
-        bottom: 15vh;
-        left: 25vw;
-        font-size: 4rem;
-        z-index: 1;
-        transform: rotate(-90deg);
-    }
-    .text-box {
-        position: absolute;
-        bottom: 10vh;
-        left: 40vw;
-    }
-    .image-box {
-        background-color: #b88f88;
-        
-        img {
-            width: 350px;
-            height: 500px;
-        } 
-        .image1 {
-            margin: -25px 25px 25px -25px;
-        }
-        .image2 {
-            width: 270px;
-            height: 450px;
-            margin: -25px 25px 25px -25px;
-        }
-        .image3 {
-            margin: 25px 25px -25px -25px;
-        }
-    }
-    .box1 {
-        align-self: flex-end;
-        justify-self: flex-start;
-        margin-bottom: 45px;
-        margin-left: 70px;
-        margin-right: auto;
-    }
-    .box2 {
-        align-self: flex-start;
-        justify-self: center;
-        margin-top: -5vh;
-        margin-bottom: auto;
-        z-index: 0;
-        transform: rotate(90deg);
-    }
-    .box3 {
-        align-self: flex-end;
-        justify-self: flex-end;
-        margin-bottom: 70px;
-        margin-right: 45px;
-        margin-left: auto;
-    }
-    
-}
-//Rysunek
-.sect4 {
-    display: flex;
-    position: relative;
-    .bg1 {
-        display: flex;
-        width: auto;
-        height: 100vh;
-        margin-right: auto;
-        flex-shrink: 1;
-    }
-    .bg2 {
-        display: flex;
-        width: 60%;
-        height: 100vh;
-        background-color: #9a898c;
-        flex-shrink: 2;
-    }
-    .header {
-        position: absolute;
-        bottom: 5vh;
-        left: 15vw;
-    }
-    .text-box {
-        position: absolute;
-        bottom: 5vh;
-        left: 43vw;
-    }
-    img {
-        position: absolute;
-        transform: scale(0.7);
-    }
-    .image1 {
-        top: 0;
-        left: 0;
-        transform: scale(0.6);
-    }
-    .image2 {
-        bottom: -5vh;
-        left: 0;
-    }
-    .image3 {
-        top: 20vh;
-        left: 7vw;
-    }
-    .image4 {
-        top: 0;
-        left: 30vw;
-    }
-    .image5 {
-        top: 40vh;
-        left: 35vw;
-    }
-    .image6 {
-        top: 0;
-        left: 55vw;
-    }
-    .image7 {
-        bottom: -5vh;
-        right: 15vw;
-    }
-    .image8 {
-        top: 0;
-        right: -2vw;
-    }
-    .image9 {
-        top: 45vh;
-        right: -2vw;
-    }
-}
-//Martwa natura
-.sect5 {
+.cont-1 {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    div {
-        z-index: 0;
+    .title {
+        margin-top: 5%;
     }
-    .bg1 {
-        width: 100%;
-        height: 55vh;
-        margin: 0;
-        margin-bottom: auto;
-    }
-    .bg2 {
-        width: 100%;
-        height: 45vh;
-        background-color: #734b4d;
-    }
-    img {
-        position: absolute;
-        z-index: 1;
-    }
-    .image1 {
-        top: 5;
-        left: 5vw;
-        width: 500px;
-        height: 650px;
-    }
-    .image2 {
-        top: 7vh;
-        right: 5vw;
-        width: 700px;
-        height: 400px;
-    }
-    .header {
-        position: absolute;
-        bottom: 10vh;
-        right: 15vw;
-    }
-    .text-box {
-        position: absolute;
-        bottom: 5vh;
-        right: 6vw;
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        gap: 3rem;
+        .img-box {
+            position: relative;
+            margin: auto;
+            z-index: 1;
+            img {
+                height: 30dvw;
+                min-height: 300px;
+                margin: auto;
+            }
+        }
+        .img-box::before {
+            position: absolute;
+            content: '';
+            top: -3%;
+            left: -4%;
+            height: 105%;
+            width: 108%;
+            background-color: #b88f88;
+            z-index: -1;
+            box-shadow: 0 .5rem 1rem rgba(#000, .5);
+        }
     }
 }
-//Miejski rytm
-.sect6 {
+
+//Rysunek
+.cont-2 {
     display: flex;
-    flex-direction: row;
-    .bg1 {
-        display: flex;
-        flex-direction: column;
+    flex-wrap: wrap;
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        width: 95%;
+        margin: auto;
         justify-content: center;
-        width: 60vw;
-        height: 100vh;
+        grid-gap: 50px;
+        img {
+            height: 10dvw;
+            min-height: 100px;
+            margin: auto;
+        }
+    }
+}
+
+//Martwa natura
+.cont-3 {
+    display: flex;
+    flex-wrap: wrap;
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+        gap: 5rem;
+        .img-box {
+            position: relative;
+            margin: auto;
+            z-index: 1;
+            .image-1 {
+                height: 30dvw;
+                min-height: 300px;
+                margin: auto;
+            }
+            .image-2 {
+                width: 30dvw;
+                min-width: 300px;
+                margin: auto;
+            }
+        }
+        .img-box::before {
+            position: absolute;
+            content: '';
+            background-color: #b88f88;
+            z-index: -1;
+            box-shadow: 0 .5rem 1rem rgba(#000, .5);
+        }
+        .box-1::before {
+            top: -3%;
+            left: -4%;
+            height: 105%;
+            width: 108%;
+        }
+        .box-2::before {
+            top: -5%;
+            left: -3.5%;
+            height: 108%;
+            width: 107%;
+        }
+    }
+
+}
+
+.cont-4 {
+    display: flex;
+    flex-wrap: wrap;
+    .img-box {
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        img {
+            height: 30dvw;
+            min-height: 300px;
+            margin: auto;
+        }
+    }
+    .img-box::before {
+        position: absolute;
+        content: '';
+        top: -3%;
+        left: -4%;
+        height: 105%;
+        width: 108%;
         background-color: #b88f88;
+        z-index: -1;
+        box-shadow: 0 .5rem 1rem rgba(#000, .5);
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .header {
+        font-size: 4rem;
+    }
+    .text-box .text {
+        font-size: 1.3rem;
+    }
+    .cont-2 .grid-container img {
+        height: 15dvw;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .header {
+        font-size: 3rem;
+    }
+    .text-box .text {
+        font-size: 1.1rem;
+    }
+}
+ 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .title {
+        margin-bottom: 5%;
     }
     .header {
-        display: flex;
-        margin: 0;
-        margin-left: 5%;
+        font-size: 2rem;
     }
     .text-box {
-        margin: 0;
-        margin-left: 30%;
-    }
-    img {
         margin: auto;
-        width: 30vw;
-        height: 85vh;
+        .text {
+            font-size: 1rem;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    section {
+        margin-bottom: 10%;
+    }
+    .title{
+        margin-left: 5%;
+        display: block;
+    }
+    .header {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .text-box {
+        margin-left: 30px;
+        width: 80%;
+        border-top: 0;
+        border-left: 1px solid #000;
+        .text {
+            font-size: .8rem;
+            margin-left: 20px;
+            margin-bottom: 8%;
+            text-align: left;
+        }
+    }
+    .bottom-line {
+        margin-top: 10%;
+    }
+
+    .cont-1 .images .img-box, .cont-4 .img-box {
+        margin-bottom: 5%;
+        img {
+            min-height: 250px;
+        }
+    }
+    .cont-2 .grid-container {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        img {
+            height: 20vw;
+        }
     }
 }

@@ -1,106 +1,120 @@
-<div class="body" id="home">  
+<div class="body" id="home">
 
-    <!-- Strona główna -->
-    <section class="main-page">
+  <!-- Strona główna -->
+  <section class="main" id="about">
+    <div class="title">
+      <p class="header name">Weronika Puchrowicz</p>
+      <div class="lines">
+        <span class="bottom-line line-1"></span>
+        <span class="bottom-line line-2"></span>
+        <span class="bottom-line line-3"></span>
+      </div>
+    </div>
+    <div class="about">
+      <div class="info">
+        <p class="header">O mnie.</p>
+        <div class="text-box">
+          <p class="text">Nazywam się Weronika Puchrowicz i mam
+            23 lata. Jestem absolwentką Wzronictwa Przemysłowego na
+            Politechnice Opolskiej. Naukę kontynuuję na studiach magisterkich o kierunku Komunikacja Promocyjno-Wizerunkowa na Instytucie Dizennikarstwa, Mediów i Komunikacji Społecznej znajdującym się na Uniwersytecie Papieskim Jana Pawła II w Krakowie.
+            <br>Swoją artystyczną karierę zamierzam rozwijać w kierunku
+            aranżacji wnętrz lub projektowania
+            reklamy. Prywatnie interesuję się trendami
+            modowymi i uprawą egzotycznych roślin
+            doniczkowych.
+          </p>
+        </div>
+      </div>
+      <img src="assets\pictures\profil.jpg" class="image" alt="selfie">
+    </div>
+
+  </section>
+
+  <!-- Strona główna -->
+  <!-- <section class="main-page">
       <div class="horizontal-box"></div>
       <div class="horizontal-border"></div>
       <div class="box">
+        <div class="sub-box header">Portfolio.</div>
         <p class="title header">Weronika Puchrowicz</p>
-        <div class="sub-box">
-          <p class="sub-title header">Portfolio.</p>
+      </div>
+    </section> -->
+
+  <!-- O mnie -->
+  <!-- <section class="about" id="about">
+      <div class="info">
+        <p class="header">O mnie.</p>
+        <div class="text-box">
+          <p class="text">Nazywam się Weronika Puchrowicz i mam
+            22 lata. Jestem studentką czwartego roku
+            wzronictwa przemysłowego na
+            Politechnice Opolskiej. Swoją artystyczną
+            karierę zamierzam rozwijać w kierunku
+            aranżacji wnętrz lub projektowania
+            reklamy. Prywatnie interesuję się trendami
+            modowymi i uprawą egzotycznych roślin
+            doniczkowych.
+          </p>
         </div>
       </div>
+      <img src="assets\pictures\profil.jpg" class="image" alt="selfie">
+    </section> -->
 
-    </section>
-  
-    <!-- O mnie -->
-    <section class="about" id="about">
-      <p class="header">O mnie.</p>
-      <img src="assets\pictures\martwa natura\15.jpg" class="image" alt="selfie">
-      <div class="info-box">
-        <p class="text">Nazywam się Weronika Puchrowicz i mam
-          22 lata. Jestem studentką czwartego roku
-          wzronictwa przemysłowego na
-          Politechnice Opolskiej. Swoją artystyczną
-          karierę zamierzam rozwijać w kierunku
-          aranżacji wnętrz lub projektowania
-          reklamy. Prywatnie interesuję się trendami
-          modowymi i uprawą egzotycznych roślin
-          doniczkowych.
-        </p>
+  <!-- Odnośniki -->
+  <section class="tiles" id="collection">
+    <div class="tile-box" routerLink="/drawings" routerLinkActive='active'>
+      <div class="wall-left-top"></div>
+      <div class="wall-right-bottom"></div>
+      <p>RYSUNKI</p>
+    </div>
+    <div class="tile-box" routerLink="/graphics-2D" routerLinkActive='active'>
+      <div class="wall-left-top"></div>
+      <div class="wall-right-bottom"></div>
+      <p>GRAFIKA<br>2D</p>
+    </div>
+    <div class="tile-box" routerLink="/graphics-3D" routerLinkActive='active'>
+      <div class="wall-left-top"></div>
+      <div class="wall-right-bottom"></div>
+      <p>GRAFIKA<br>3D</p>
+    </div>
+  </section>
+
+  <!-- Formularz kontaktowy -->
+  <section class="contact-form">
+    <div id="letter">
+      <div class="wrapper centered">
+        <div class="envelope back"></div>
+        <article class="letter">
+          <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+            <div class="side">
+              <h1>Skontaktuj się ze mną.</h1>
+              <p>
+                <textarea name="message" placeholder="Twoja wiadomość" [(ngModel)]="message"></textarea>
+              </p>
+            </div>
+            <div class="side">
+              <p>
+                <input type="text" name="name" #nameInput="ngModel" placeholder="Twoje imię i nazwisko"
+                  [(ngModel)]="name" required>
+              </p>
+              <div class="is-error" *ngIf="nameInput.invalid && nameInput.touched">Twoje dane są wymagane.</div>
+              <p>
+                <input type="email" name="email" #emailInput="ngModel" placeholder="Twój email" [(ngModel)]="email"
+                  required email>
+              </p>
+              <div class="is-error" *ngIf="emailInput.invalid && emailInput.touched">Twój email jest wymagany.</div>
+              <p>
+                <button type="submit" id="sendLetter" [disabled]="contactForm.invalid" (click)="addClass()">
+                  Wyślij
+                </button>
+              </p>
+            </div>
+          </form>
+        </article>
+        <div class="envelope front"></div>
       </div>
-    </section>
+      <p class="result-message centered">Dziękuję za twoją wiadomość.</p>
+    </div>
+  </section>
 
-    <!-- Odnośniki -->
-    <section class="tiles" id="collection">
-        <div class="tile-box" routerLink="/drawings" routerLinkActive='active'>
-          <div class="wall-left-top"></div>
-          <div class="wall-right-bottom"></div>
-          <p>RYSUNKI</p>
-        </div>
-        <div class="tile-box" routerLink="/graphics-2D" routerLinkActive='active'>
-          <div class="wall-left-top"></div>
-          <div class="wall-right-bottom"></div>
-          <p>GRAFIKA<br>2D</p>
-        </div>
-        <div class="tile-box" routerLink="/graphics-3D" routerLinkActive='active'>
-          <div class="wall-left-top"></div>
-          <div class="wall-right-bottom"></div>
-          <p>GRAFIKA<br>3D</p>
-        </div>
-    </section>
-
-    <!-- Formularz kontaktowy -->
-    <section class="contact-form">
-      <div id="letter">
-        <div class="wrapper centered">
-          <div class="envelope back"></div>
-          <article class="letter">
-            <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-              <div class="side">
-                <h1>Skontaktuj się ze mną.</h1>
-                <p>
-                  <textarea name="message" placeholder="Twoja wiadomość" [(ngModel)]="message"></textarea>
-                </p>
-              </div>
-              <div class="side">
-                <p>
-                  <input 
-                    type="text" 
-                    name="name" 
-                    #nameInput="ngModel" 
-                    placeholder="Twoje imię i nazwisko" 
-                    [(ngModel)]="name"
-                    required>
-                </p>
-                <div class="is-error" *ngIf="nameInput.invalid && nameInput.touched">Twoje dane są wymagane.</div>
-                <p>
-                  <input 
-                    type="email" 
-                    name="email" 
-                    #emailInput="ngModel"
-                    placeholder="Twój email" 
-                    [(ngModel)]="email"
-                    required
-                    email>
-                </p>
-                <div class="is-error" *ngIf="emailInput.invalid && emailInput.touched">Twój email jest wymagany.</div>
-                <p>
-                  <button 
-                    type="submit" 
-                    id="sendLetter" 
-                    [disabled]="contactForm.invalid" 
-                    (click)="addClass()">
-                      Wyślij
-                  </button>
-                </p>
-              </div>
-            </form>
-          </article>
-          <div class="envelope front"></div>
-        </div>
-        <p class="result-message centered">Dziękuję za twoją wiadomość.</p>
-      </div>  
-    </section>
-  
-  </div>
+</div>
