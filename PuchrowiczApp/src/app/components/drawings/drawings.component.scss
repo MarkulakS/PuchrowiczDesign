@@ -10,6 +10,7 @@ section {
     align-content: center;
     width: 95%;
     height: 95%;
+    margin: auto;
     margin-bottom: 100px;
 }
 .title {
@@ -33,12 +34,10 @@ section {
     justify-content: center;
     margin: auto;
     width: 50%;
-    // margin-left: 40%;
     border-top: 1px solid #000;
     .text {
         width: auto;
         height: auto;
-        // margin-left: 20px;
         font-size: 1.3rem;
         text-align: center;
     }
@@ -69,7 +68,7 @@ section {
             margin: auto;
             z-index: 1;
             img {
-                height: 30dvw;
+                height: 35dvw;
                 min-height: 300px;
                 margin: auto;
             }
@@ -79,7 +78,7 @@ section {
             content: '';
             top: -3%;
             left: -4%;
-            height: 105%;
+            height: 104.5%;
             width: 108%;
             background-color: #b88f88;
             z-index: -1;
@@ -101,7 +100,7 @@ section {
         justify-content: center;
         grid-gap: 50px;
         img {
-            height: 10dvw;
+            height: 15dvw;
             min-height: 100px;
             margin: auto;
         }
@@ -116,7 +115,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 70%;
+        width: 90%;
         margin: auto;
         gap: 5rem;
         .img-box {
@@ -124,12 +123,12 @@ section {
             margin: auto;
             z-index: 1;
             .image-1 {
-                height: 30dvw;
+                height: 40dvw;
                 min-height: 300px;
                 margin: auto;
             }
             .image-2 {
-                width: 30dvw;
+                width: 40dvw;
                 min-width: 300px;
                 margin: auto;
             }
@@ -144,13 +143,13 @@ section {
         .box-1::before {
             top: -3%;
             left: -4%;
-            height: 105%;
+            height: 104.5%;
             width: 108%;
         }
         .box-2::before {
             top: -5%;
             left: -3.5%;
-            height: 108%;
+            height: 107.5%;
             width: 107%;
         }
     }
@@ -165,7 +164,7 @@ section {
         margin: auto;
         z-index: 1;
         img {
-            height: 30dvw;
+            height: 40dvw;
             min-height: 300px;
             margin: auto;
         }
@@ -175,7 +174,7 @@ section {
         content: '';
         top: -3%;
         left: -4%;
-        height: 105%;
+        height: 104.5%;
         width: 108%;
         background-color: #b88f88;
         z-index: -1;

@@ -16,7 +16,7 @@
         <div class="text-box">
           <p class="text">Nazywam się Weronika Puchrowicz i mam
             23 lata. Jestem absolwentką Wzronictwa Przemysłowego na
-            Politechnice Opolskiej. Naukę kontynuuję na studiach magisterkich o kierunku Komunikacja Promocyjno-Wizerunkowa na Instytucie Dizennikarstwa, Mediów i Komunikacji Społecznej znajdującym się na Uniwersytecie Papieskim Jana Pawła II w Krakowie.
+            Politechnice Opolskiej. Naukę kontynuuję na studiach magisterkich na kierunku Komunikacja Promocyjno-Wizerunkowa znajdującym się na Uniwersytecie Papieskim Jana Pawła II w Krakowie.
             <br>Swoją artystyczną karierę zamierzam rozwijać w kierunku
             aranżacji wnętrz lub projektowania
             reklamy. Prywatnie interesuję się trendami
@@ -25,40 +25,11 @@
           </p>
         </div>
       </div>
-      <img src="assets\pictures\profil.jpg" class="image" alt="selfie">
+        <figure class="img" [ngClass]="{'shine-class': isShining}" (click)="addAnimation()">
+          <img src="assets\pictures\profil.jpg" class="image" alt="Profil photo">
+        </figure>
     </div>
-
   </section>
-
-  <!-- Strona główna -->
-  <!-- <section class="main-page">
-      <div class="horizontal-box"></div>
-      <div class="horizontal-border"></div>
-      <div class="box">
-        <div class="sub-box header">Portfolio.</div>
-        <p class="title header">Weronika Puchrowicz</p>
-      </div>
-    </section> -->
-
-  <!-- O mnie -->
-  <!-- <section class="about" id="about">
-      <div class="info">
-        <p class="header">O mnie.</p>
-        <div class="text-box">
-          <p class="text">Nazywam się Weronika Puchrowicz i mam
-            22 lata. Jestem studentką czwartego roku
-            wzronictwa przemysłowego na
-            Politechnice Opolskiej. Swoją artystyczną
-            karierę zamierzam rozwijać w kierunku
-            aranżacji wnętrz lub projektowania
-            reklamy. Prywatnie interesuję się trendami
-            modowymi i uprawą egzotycznych roślin
-            doniczkowych.
-          </p>
-        </div>
-      </div>
-      <img src="assets\pictures\profil.jpg" class="image" alt="selfie">
-    </section> -->
 
   <!-- Odnośniki -->
   <section class="tiles" id="collection">

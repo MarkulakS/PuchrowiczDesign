@@ -72,7 +72,7 @@ section {
         content: '';
         top: -3%;
         left: -4%;
-        height: 105%;
+        height: 104.5%;
         width: 108%;
         background-color: #b88f88;
         z-index: -1;
@@ -110,7 +110,7 @@ section {
         .img-box::before {
             position: absolute;
             content: '';
-            top: -3%;
+            top: -2.5%;
             left: -2.5%;
             height: 105%;
             width: 105%;
@@ -130,16 +130,15 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 90%;
+        width: 95%;
         margin: auto;
-        gap: 5rem;
+        gap: 1rem;
         .img-box-1 {
             order: 2;
             margin: auto;
-            margin-top: 0;
-            margin-right: 25px;
+            margin-top: -50px;
             img {
-                height: 25dvw;
+                height: 30dvw;
                 min-height: 300px;
                 margin: auto;
             }
@@ -147,14 +146,14 @@ section {
         .img-box-2 {
             display: flex;
             flex-wrap: wrap;
-            gap: 3rem;
+            gap: 2rem;
             margin: auto;
             margin-top: 100px;
-            margin-left: 25px;
+            margin-left: 0;
             order: 1;
             img {
-                height: 20dvw;
-                min-height: 200px;
+                height: 25dvw;
+                min-height: 250px;
                 margin: auto;
             }
         }
@@ -297,16 +296,6 @@ section {
         .title {
             margin-bottom: 5%;
         }
-        .images {
-            .img-box-1 {
-                order: 1;
-                margin: auto;
-            }
-            .img-box-2 {
-                order: 2;
-                margin: auto;
-            }
-        }
     } 
 }
 
@@ -317,6 +306,17 @@ section {
     }
     .text-box .text {
         font-size: 1.1rem;
+    }
+    .cont-3 .images {
+        gap: 5rem;
+            .img-box-1 {
+                order: 1;
+                margin: auto;
+            }
+            .img-box-2 {
+                order: 2;
+                margin: auto;
+            }
     }
     .cont-4 .images {
         gap: 3rem;

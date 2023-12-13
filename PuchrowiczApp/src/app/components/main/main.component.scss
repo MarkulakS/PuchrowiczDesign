@@ -123,75 +123,50 @@ section {
         .image {
             order: 2;
         }
+        figure {
+            position: relative;
+            margin: auto;
+        }
+        figure::before {
+            position: absolute;
+            top: 0;
+            left: -60%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+        figure:hover::before {
+            -webkit-animation: shine 2s;
+            animation: shine 2s;
+        }
+        .shine-class:focus::before,
+        .shine-class:active::before {
+            -webkit-animation: shine 2s;
+            animation: shine 2s;
+        }
+        .shine-class.temporary-class::before {
+            /* Dodatkowe style dla pseudoelementu ::before w stanie tymczasowym */
+            -webkit-animation: none;
+            animation: none;
+        }
+        @-webkit-keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
     }
 }
-
-//Strona główna
-// .main-page {
-//     display: flex;
-//     flex-direction: row;
-//     margin: auto;
-//     width: 100%;
-//     height: auto;
-//     .horizontal-box {
-//         display: flex;
-//         width: 30%;
-//         height: 100vh;
-//         margin-left: 0;
-//         background-color: #cd9494;
-//         z-index: 0;
-//         transition: opacity 0.5s ease;
-//     }
-//     .horizontal-border {
-//         display: flex;
-//         width: 25px;
-//         height: 100vh;
-//         background-color: #2e1a1f;
-//         z-index: 0;
-//         transition: opacity 0.5s ease;
-//     }
-//     .box {
-//         display: flex;
-//         flex-direction: column;
-//         flex-wrap: wrap;
-//         width: 69%;
-//         height: 80vh;
-//         .sub-box {
-//             position: relative;
-//             display: flex;
-//             width: 100%;
-//             margin: 0;
-//             margin-left: 100px;
-//             margin-top: 100px;
-//             font-size: 8rem;
-//             z-index: 1;
-//         }
-//         .sub-box::before {
-//             content: '';
-//             position: absolute;
-//             top: 0;
-//             left: -20px;
-//             min-width: 300px;
-//             width: 475px;
-//             height: 100px;
-//             background-color: #9a898c;
-//             z-index: -1;
-//         }
-//         .title {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             width: 100%;
-//             margin: auto;
-//             margin-right: 0px;
-//             margin-bottom: 20px;
-//             z-index: 1;
-//             font-size: 3.5rem;
-//             font-weight: 400;
-//             animation: showTitile 0.5s ease-in;
-//         }
-//     }
-// }
 
 //Kafelki
 .tiles {
