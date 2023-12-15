@@ -8,13 +8,13 @@ Na stronie głównej znajdziesz kilka sekcji, w tym "o mnie", "projekty" oraz fo
 </br></br>
 W sekcji "O mnie" przedstawiony został krótki opis doświadczenia oraz celów zawodowych klientki.
 </br>
-Sekcja "Projekty" pozwala na obejrzenie projektów, podzielonych na kategorie. W tej sekcji znajdują się informacje na temat najważniejszych projektów.
+Sekcja "Kolekcja" pozwala na obejrzenie projektów, podzielonych na kategorie. W tej sekcji znajdują się najważniejsze projekty.
 </br>
 Formularz kontaktowy pozwala na wysłanie maila przez użytkownika do klienta na jego skrzynkę pocztową.
 </br></br>
 Strona została napisana pod wytyczne klienta.</p>
 
-### *Strona w rozbudowie*
+### Odwiedź stronę <a href='https://puchrowiczw.netlify.app'>https://puchrowiczw.netlify.app</a>
 
 ## Narzędzia i technologie użyte w projekcie:
 - Visual Studio Code (środowisko)
@@ -47,13 +47,13 @@ On the main page you will find several sections, including "about me", "projects
 </br></br>
 In the "About me" section, a brief description of experience and professional goals is presented.
 </br>
-The "Projects" section allows you to view projects divided into categories. In this section, you will find information about the most important projects.
+The "Projects" section allows you to view projects divided into categories. In this section, you will find the most important projects.
 </br>
 The contact form allows the user to send an e-mail to the customer's mailbox.
 </br></br>
 The site was written under the client's guidelines.</p>
 
-### *Page under construction*
+### Visit website <a href='https://puchrowiczw.netlify.app'>https://puchrowiczw.netlify.app</a>
 
 ## Tools & technologies used in the project:
 - Visual Studio Code (environment)
