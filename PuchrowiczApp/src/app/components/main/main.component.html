@@ -1,7 +1,7 @@
 <div class="body" id="home">
 
   <!-- Strona główna -->
-  <section class="main" id="about">
+  <section class="main">
     <div class="title">
       <p class="header name">Weronika Puchrowicz</p>
       <div class="lines">
@@ -25,9 +25,10 @@
           </p>
         </div>
       </div>
-        <figure class="img" [ngClass]="{'shine-class': isShining}" (click)="addAnimation()">
-          <img src="assets\pictures\profil.jpg" class="image" alt="Profil photo">
-        </figure>
+        <div class="box" id="about">
+          <div class="image-box" id="love"></div>
+          <div class="image-background"></div>
+        </div>
     </div>
   </section>
 

@@ -5,6 +5,10 @@
     --clr-primary-3: #2e1a1f;
 }
 
+#love {
+    cursor: url("/assets/pictures/icons/icons8-heart-30.png"), auto;
+}
+
 .body {
     background-color: #fff;
     color: #000;
@@ -17,7 +21,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;    
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .hidden {
@@ -77,95 +81,99 @@ section {
             }
         }
     }
-    .about {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 95%;
-        height: 95%;
-        margin: auto;
-        order: 1;
-        .info {
+        .about {
             display: flex;
-            flex-direction: column;
-            width: 50%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 95%;
+            height: 95%;
             margin: auto;
-            margin-left: 0;
-            .header {
-                width: 100%;
+            order: 1;
+    
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
                 margin: auto;
-                margin-bottom: 0;
                 margin-left: 0;
-                text-align: center;
-            }
-            .text-box {
-                justify-content: center;
-                margin: auto;
-                margin-top: 0;
-                margin-left: 0;
-                width: 100%;
-                border-top: 1px solid #b88f88;
-                .text {
-                    width: auto;
-                    height: auto;
-                    margin-left: 20px;
-                    font-size: 1.3rem;
+                margin-top: 10%;
+    
+                .header {
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 0;
+                    margin-left: 0;
                     text-align: center;
+                }
+    
+                .text-box {
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 0;
+                    margin-left: 0;
+                    width: 100%;
+                    border-top: 1px solid #b88f88;
+    
+                    .text {
+                        width: auto;
+                        height: auto;
+                        margin-left: 20px;
+                        font-size: 1.3rem;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .box {
+                position: relative;
+                height: 40dvw;
+                width: 27dvw;
+                min-height: 300px;
+                min-width: 200px;
+                margin: auto;
+                order: 2;
+    
+                .image-box {
+                    display: inline-block;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    background-image: url('/assets/pictures/profil_square_v2.jpg');
+                    background-color: #cccccc;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 10%;
+                    cursor: pointer;
+                    transition: .5s;
+                    z-index: 999;
+                }
+    
+                .image-background {
+                    position: absolute;
+                    top: 6.5%;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #b88f88;
+                    transform: translate(50px, 50px);
+                    transition: .5s;
+                    z-index: 1;
+                }
+            }
+    
+            .box:hover {
+                .image-background {
+                    width: 110%;
+                    height: 107%;
+                    margin-top: -5%;
+                    margin-left: -5%;
+                    transform: translate(0px, 0px);
                 }
             }
         }
-        img {
-            width: auto;
-            height: 40dvw;
-            min-height: 300px;
-            margin: auto;
-        }
-        .image {
-            order: 2;
-        }
-        figure {
-            position: relative;
-            margin: auto;
-        }
-        figure::before {
-            position: absolute;
-            top: 0;
-            left: -60%;
-            z-index: 2;
-            display: block;
-            content: '';
-            width: 50%;
-            height: 100%;
-            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-            -webkit-transform: skewX(-25deg);
-            transform: skewX(-25deg);
-        }
-        figure:hover::before {
-            -webkit-animation: shine 2s;
-            animation: shine 2s;
-        }
-        .shine-class:focus::before,
-        .shine-class:active::before {
-            -webkit-animation: shine 2s;
-            animation: shine 2s;
-        }
-        .shine-class.temporary-class::before {
-            /* Dodatkowe style dla pseudoelementu ::before w stanie tymczasowym */
-            -webkit-animation: none;
-            animation: none;
-        }
-        @-webkit-keyframes shine {
-            100% {
-                left: 125%;
-            }
-        }
-        @keyframes shine {
-            100% {
-                left: 125%;
-            }
-        }
-    }
 }
 
 //Kafelki
@@ -173,9 +181,10 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    height: 40vw;
     justify-content: center;
+    align-items: center;
     margin: auto;
-    margin-bottom: 15%;
     gap: 10rem;
     transition: all 0.5s ease;  
     .tile-box {
@@ -474,6 +483,9 @@ section {
 
 // Medium devices (tablets, less than 992px)
 @media screen and (max-width: 991.98px) {
+    .section {
+        margin-bottom: 15%;
+    }
     .main .about .info {
         .header {
             font-size: 3rem;
@@ -481,6 +493,11 @@ section {
         .text-box .text {
             font-size: 1rem;
         }
+    }
+    .tiles {
+        height: auto;
+        margin-bottom: 200px;
+        margin-top: 200px;
     }
 
 }
@@ -514,15 +531,21 @@ section {
                 margin-top: 5%;
                 order: 2;
             }
-            .image {
+            .box {
                 order: 1;
+                .image-box {
+                    cursor: auto;
+                    margin: auto;
+                }
+                .image-background {
+                    display: none;
+                }
             }
         }
     }
     .tiles {
-        margin-bottom: 200px;
-        margin-top: 200px;
         width: 30%;
+        height: auto;
         .tile-box {
             min-width: 170px;
             height: 120px;
